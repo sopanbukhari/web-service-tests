@@ -1,62 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>POST a new user</name>
+   <name>GET Reqres</name>
    <tag></tag>
-   <elementGuidId>bf95ec44-8f74-4b67-854c-83a7e77af5f2</elementGuidId>
+   <elementGuidId>4fc9a73f-74bc-40c9-8fc4-73c6c0da00d6</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <authorizationRequest>
+      <authorizationInfo>
+         <entry>
+            <key>bearerToken</key>
+            <value>reqres_eb1d2233b078400888f132e564748630</value>
+         </entry>
+      </authorizationInfo>
+      <authorizationType>Bearer</authorizationType>
+   </authorizationRequest>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;age\&quot;: ${age},\n  \&quot;avatar\&quot;: null,\n  \&quot;gender\&quot;:\&quot;${gender}\&quot;,\n  \&quot;password\&quot;: \&quot;${password}\&quot;,\n  \&quot;username\&quot;: \&quot;${username}\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
+      <name>x-api-key</name>
       <type>Main</type>
-      <value>application/json</value>
+      <value>reqres_eb1d2233b078400888f132e564748630</value>
+      <webElementGuid>b8cc4436-ad81-4220-bb71-730c30441bc6</webElementGuid>
    </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer reqres_eb1d2233b078400888f132e564748630</value>
+      <webElementGuid>b7d56359-4fe7-4624-8f40-5be778cbc04e</webElementGuid>
+   </httpHeaderProperties>
+   <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.baseUrl}/api/users/json</restUrl>
+   <path></path>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${GlobalVariable.baseUrl}/api/users?page=2</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <variables>
-      <defaultValue>18</defaultValue>
-      <description></description>
-      <id>0ff0fdb5-ffe2-454e-8cf9-c2d44e21ddac</id>
-      <masked>false</masked>
-      <name>age</name>
-   </variables>
-   <variables>
-      <defaultValue>'MALE'</defaultValue>
-      <description></description>
-      <id>7c77cd5e-e69d-4bf6-bf4c-242ca104081c</id>
-      <masked>false</masked>
-      <name>gender</name>
-   </variables>
-   <variables>
-      <defaultValue>'mimi'</defaultValue>
-      <description></description>
-      <id>30565e15-eece-49b1-8159-ac9a99a956aa</id>
-      <masked>false</masked>
-      <name>username</name>
-   </variables>
-   <variables>
-      <defaultValue>'123456789'</defaultValue>
-      <description></description>
-      <id>303e8db4-748d-4300-878d-05ef1956d9b6</id>
-      <masked>false</masked>
-      <name>password</name>
-   </variables>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

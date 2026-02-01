@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01 - Ensure status code 200</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>82ae77d1-766b-4d6a-9919-0f856f4ae349</testCaseGuid>
+</TestCaseEntity>

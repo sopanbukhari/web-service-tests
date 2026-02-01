@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02 - Validate pagination info</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d93f1ba3-6b9c-4a68-a6e9-83b55cb171a8</testCaseGuid>
+</TestCaseEntity>
